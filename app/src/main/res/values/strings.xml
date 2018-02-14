@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
+    <string name="header_img">Header Image</string>
+    <string name="logo">Logo</string>
+    <string name="address">2465 Latham St"</string>
+    <string name="city">Mountain View, CA 94043</string>
+    <string name="phone">650\-555\-5555</string>
+    <string name="website">www.udacity.com</string>
+    <string name="addressIcon">Address Icon</string>
+    <string name="cityIcon">City Icon</string>
+    <string name="phoneIcon">Phone Icon</string>
+    <string name="websiteIcon">Website Icon</string>
+    <string name="facebookIcon">Facebook Icon</string>
+    <string name="youtubeIcon">Youtube Icon</string>
+    <string name="gitHubIcon">GitHub Icon</string>
+    <string name="twitterIcon">Twitter Icon</string>
 </resources>

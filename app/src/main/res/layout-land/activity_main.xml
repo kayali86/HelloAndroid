@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background"
     tools:context="com.example.android.helloandroid.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_centerHorizontal="true">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
             android:scaleType="fitCenter"
+            android:contentDescription="@string/header_img"
             android:src="@drawable/header"/>
 
 
@@ -32,6 +28,7 @@
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:contentDescription="@string/logo"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"
                 android:paddingTop="15dp"
@@ -45,21 +42,25 @@
                 android:layout_marginBottom="3dp"
                 android:background="@drawable/layout_bg"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:contentDescription="@string/addressIcon"
                     android:layout_gravity="center"
                     android:src="@drawable/envelope"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2465 Latham St"
+                    android:text="@string/address"
                     android:textColor="@android:color/white"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
                     android:textSize="18sp"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -69,21 +70,25 @@
                 android:layout_marginBottom="3dp"
                 android:background="@drawable/layout_bg"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:contentDescription="@string/cityIcon"
                     android:layout_gravity="center"
                     android:src="@drawable/envelope"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mountain View, CA 94043"
+                    android:text="@string/city"
                     android:textColor="@android:color/white"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
                     android:textSize="18sp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -93,21 +98,26 @@
                 android:layout_marginBottom="3dp"
                 android:background="@drawable/layout_bg"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="18dp"
+                    android:contentDescription="@string/phoneIcon"
                     android:layout_gravity="center"
                     android:src="@drawable/phone"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="650-555-5555"
+                    android:text="@string/phone"
                     android:textColor="@android:color/white"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:id="@+id/call_view"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -116,59 +126,76 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/layout_bg"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:contentDescription="@string/websiteIcon"
                     android:layout_gravity="center"
                     android:src="@drawable/icon_earth"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="www.udacity.com"
+                    android:text="@string/website"
                     android:textColor="@android:color/white"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:id="@+id/website_view"/>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingLeft="30dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
                 android:paddingTop="5dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:contentDescription="@string/facebookIcon"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
                     android:src="@drawable/facebook" />
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:contentDescription="@string/youtubeIcon"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
-                    android:src="@drawable/youtube"/>
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/youtube"
+                    android:id="@+id/Youtube_view"/>
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:contentDescription="@string/gitHubIcon"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
                     android:src="@drawable/github"/>
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:contentDescription="@string/twitterIcon"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
                     android:src="@drawable/twitter"/>
+
             </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
 
 </LinearLayout>
